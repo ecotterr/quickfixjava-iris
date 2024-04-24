@@ -1,2 +1,5 @@
 quickfixiris/target
 quickfixiris/src/test
+
+*.jar
+*.log

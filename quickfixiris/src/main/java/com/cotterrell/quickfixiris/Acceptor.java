@@ -1,0 +1,45 @@
+package com.cotterrell.quickfixiris;
+
+import quickfix.*;
+
+public class Acceptor implements quickfix.Application {
+     
+    @Override
+    public void onCreate(SessionID sessionId) {
+        System.out.println("Executor Session Created with SessionID = " + sessionId);
+    }
+ 
+    @Override
+    public void onLogon(SessionID sessionId) {
+ 
+    }
+
+    @Override
+    public void onLogout(SessionID sessionId) {
+ 
+    }
+
+    @Override
+    public void toAdmin(Message message, SessionID sessionId) {
+ 
+    }
+
+    @Override
+    public void fromAdmin(Message message, SessionID sessionId)
+            throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue,
+            RejectLogon {
+ 
+    }
+
+    @Override
+    public void toApp(Message message, SessionID sessionId) throws DoNotSend {
+ 
+    }
+
+    @Override
+    public void fromApp(Message message, SessionID sessionId)
+            throws FieldNotFound, IncorrectDataFormat, IncorrectTagValue,
+            UnsupportedMessageType {
+         
+    }
+}
